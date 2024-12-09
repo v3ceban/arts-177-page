@@ -1,0 +1,77 @@
+.editor .tiptap {
+  outline: none;
+  cursor: text;
+  min-height: 320px;
+}
+
+.editor .tiptap h1,
+.editor .tiptap h2,
+.editor .tiptap h3,
+.editor .tiptap h4,
+.editor .tiptap h5,
+.editor .tiptap h6 {
+  font-weight: semibold;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.editor .tiptat h1 strong,
+.editor .tiptat h2 strong,
+.editor .tiptat h3 strong,
+.editor .tiptat h4 strong,
+.editor .tiptat h5 strong,
+.editor .tiptat h6 strong {
+  font-weight: bold;
+}
+
+.editor .tiptap p strong {
+  font-weight: semibold;
+}
+
+.editor .tiptap h1 {
+  font-size: 2rem;
+}
+
+.editor .tiptap h2 {
+  font-size: 1.75rem;
+}
+
+.editor .tiptap h3 {
+  font-size: 1.5rem;
+}
+
+.editor .tiptap h4 {
+  font-size: 1.25rem;
+}
+
+.editor .tiptap h5 {
+  font-size: 1.125rem;
+}
+
+.editor .tiptap h6 {
+  font-size: 1rem;
+}
+
+.editor .tiptap ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+
+.editor .tiptap ol {
+  list-style-type: decimal;
+  padding-left: 1rem;
+  margin-left: 0.5rem;
+}
+
+.editor .tiptap p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+  font-weight: 300;
+  opacity: 0.75;
+}
+
+.editor .tiptap p.is-editor-empty {
+  margin-bottom: 0;
+}

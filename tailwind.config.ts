@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "roboto-mono": ["var(--font-roboto-mono)", ...fontFamily.sans],
+        "roboto-mono": ["var(--font-roboto-mono)", ...fontFamily.mono],
       },
     },
   },

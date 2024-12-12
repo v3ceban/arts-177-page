@@ -25,7 +25,7 @@ export const Form = () => {
       </Input>
       <label className="block col-span-2 mb-4 text-2xl font-bold md:mb-0">
         Message
-        <RichTextEditor className="block mt-4 w-full text-base font-normal" />
+        <RichTextEditor className="flex mt-4 w-full text-base font-normal sm:block" />
       </label>
       <button
         type="submit"

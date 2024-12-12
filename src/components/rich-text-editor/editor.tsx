@@ -39,7 +39,7 @@ const RichTextEditor = ({ className }: { className?: string }) => {
       <Header editor={editor} />
       <EditorContent
         editor={editor}
-        className="p-6 rounded-b border-b-2 outline-none border-x-2 border-blue-black editor"
+        className="p-6 w-full rounded-r border-r-2 outline-none sm:rounded-t-none sm:border-t-0 sm:border-b-2 border-y-2 border-blue-black editor sm:rounded-b-2 sm:border-x-2"
         onClick={(e) => {
           e.preventDefault();
           e.stopPropagation();

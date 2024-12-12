@@ -19,7 +19,7 @@ export const Header = ({ editor }: { editor: Editor }) => {
         e.preventDefault();
         e.stopPropagation();
       }}
-      className="grid justify-items-center p-2 rounded-t border-2 border-blue-black grid-cols-14"
+      className="grid justify-items-center p-2 rounded-l border-2 sm:rounded-t sm:rounded-bl-none border-blue-black sm:grid-cols-14"
     >
       {levels.map((level) => (
         <Button
@@ -91,12 +91,17 @@ const Button = ({
   };
 
   return (
-    <button className="max-w-fit" onClick={handleClick} disabled={disabled}>
+    <button
+      className="my-1 sm:my-0 max-w-fit"
+      onClick={handleClick}
+      disabled={disabled}
+    >
       <Image
         src={icon}
         alt={icon.replace(/\/rte-buttons\/|\.svg/g, "")}
         width={30}
         height={30}
+        className="rounded transition-all duration-100 hover:invert"
       />
     </button>
   );
